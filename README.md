@@ -53,8 +53,39 @@ Two manufacture methods for the bottom plates:
 
 It is recommended to use Acrylic as bottom plate for better apperance.
 
-# BOM table #
+## BOM table ##
+
+| Component | Dimension | Quantity | Comment    |
+|:---------:|:---------:|:--------:|:----------:|
+| M2        |           | 10x2     |            |
+|           |           | 5x2      |            |
+|           |           |          | Only for pla-printed case |
+
 
 # zmk_config #
 The official main branck of zmk firmware does not support split encoder, rotated epd screen and other utility features.
-These features are available on separate pull requests ()
+These features are available on separate pull requests and they are merged into [the support branch](https://github.com/ufan/zmk/tree/support).
+Moreover, a new board called `nrfmacro` and a shield called `sweepro-ce` are defined in this branch.
+
+A reference `zmk_config` [repository](https://github.com/ufan/sweepro-ce_config) is recommended as the starting point for your personal customization.
+All the dependency has been correctly defined in this repository, thus you only need to modify the *keymap* file and *conf* file.
+The same workflow as recommended by zmk is used, which use GitHub Action to automate firmware building.
+Just fork it, make changes, commit.
+The firmware is then available for download. For more details of this process, check [the official document](https://zmk.dev/docs/user-setup).
+
+## Build in local environment ##
+It's also possible to build the firmware locally.
+Prerequisites:
+- set up the deveplopment environment, see [official document](https://zmk.dev/docs/development/setup) for the steps
+- clone and checkout the `support` branch
+- clone the forked `zmk_config` repository
+- build using
+  - board name: `nrfmacro`
+  - shield name: `sweepro-ce_left`, `sweepro-ce_right`
+
+# User guide #
+A more detailed user guide is available here, which includes:
+- config options specific for the `nrfmacro` board
+- explanation of the status screen
+- how to customize the personal logo on the right split
+
