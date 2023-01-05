@@ -1,10 +1,11 @@
-Sweep-Pro community edition is a split keyboard with design focus on:
+Sweep-Pro (community edition) is a split keyboard with design focus on:
 - smooth and comfortable typing
 - minimalism
 - portability
 
-It has the following features:
-- zmk firware, with nrfmicro as MCU module (nrf52840)
+# Features #
+
+- wireless using zmk firware, with nrfmicro as MCU module (nrf52840)
 - 34+2 keys, with ferris/sweep layout (thumb keys adjusted)
 - choc spacing (18x17)
 - Kailh choc v1 switches, with hotplug sockets
@@ -54,12 +55,15 @@ Two manufacture methods for the bottom plates:
 It is recommended to use Acrylic as bottom plate for better apperance.
 
 ## BOM table ##
+[endcoder: EVQWGD001](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4b012e8dThICYU&id=576827634283&_u=6201h1ah76c85a)
+[epd: GoodDisplay 1.02](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4b012e8dThICYU&id=564905401632&_u=6201h1ah76a92a)
 
-| Component | Dimension | Quantity | Comment    |
-|:---------:|:---------:|:--------:|:----------:|
-| M2        |           | 10x2     |            |
-|           |           | 5x2      |            |
-|           |           |          | Only for pla-printed case |
+| Component   | Dimension | Quantity |
+|:-----------:|:---------:|:--------:|
+| M2 screws   | 5 mm      | 20       |
+|             | 6 mm      | 20       |
+| M2 standoff | 4 mm      | 20       |
+|             | 5 mm      | 20       |
 
 
 # zmk_config #
